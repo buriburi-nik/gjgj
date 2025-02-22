@@ -27,26 +27,43 @@ function App() {
   }
 
   
+  // const chartData = {
+  //   label: ["Principal", "Interest"],
+  //   datasets: [
+  //     {
+  //       label: "Loan Breakdown",
+  //       data: [loanAmount, totalInterestGenerated],
+  //       backgroundColor: ['rgba(100, 192, 75, 0.2)', 'rgba(138, 99, 255, 0.2)'],
+  //       borderColor: ['rgb(125, 138, 4)', 'rgba(255, 99, 132, 1)'],
+  //       borderWidth: 1,
+  //     }]
+  // }
   const chartData = {
-    label: ["Principal", "Interest"],
+    labels: ["Principal", "Interest"],
     datasets: [
       {
         label: "Loan Breakdown",
         data: [loanAmount, totalInterestGenerated],
-        backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(255, 99, 132, 0.2)'],
-        borderColor: ['rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)'],
-        borderWidth: 1,
-      }]
+        backgroundColor: [
+          'rgba(255, 159, 64,0.3)',
+          'rgba(153, 102, 255,0.4)'
+        ],
+        borderColor: [
+          'rgb(75, 192, 192)',
+          'rgb(255, 86, 213)',
+        ],
+        borderWidth: 2,
+      }
+    ]
   }
-  
 
   return (
     <>
       <h1 className="title">Bank of Reacts</h1>
       <div className="cont">
         
-        <div className="left">
-          
+      <div className="left">
+      
       <Sliders
         homeValue={homeValue}
         setHomeValue={setHomeValue}

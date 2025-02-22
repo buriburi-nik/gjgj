@@ -26,6 +26,7 @@ export default function Sliders({
         setLoanAmount(homeValue - value);
     };
 
+
     
 
     const handleLoanAmountChange = (e) => {
@@ -45,7 +46,7 @@ export default function Sliders({
 return (
     <div className="slider-cont">
         <div className="slider">
-            <label>Home Value: {homeValue}</label>
+            <label>Home Value: ${homeValue}</label>
             <input
                 type="range"
                 min="0"
@@ -56,7 +57,7 @@ return (
             />
         </div>
         <div className="slider">
-            <label>Down Payment: {downPayment}</label>
+            <label>Down Payment: ${downPayment}</label>
             <input
                 type="range"
                 min="0"
@@ -67,7 +68,7 @@ return (
             />
         </div>
         <div className="slider">
-            <label>Loan Amount: {loanAmount}</label>
+            <label>Loan Amount: ${loanAmount}</label>
             <input
                 type="range"
                 min="0"
@@ -88,7 +89,7 @@ return (
                 onChange={handleInterestRateChange}
             />
         </div>
-              <div className="slider">
+        <div className="slider">
         <label>Tenure (Years): {loanTerm}</label>
         <select value={loanTerm} onChange={handleLoanTermChange}>
           <option value={5}>5 years</option>
