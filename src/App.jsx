@@ -45,7 +45,8 @@ function App() {
       <h1 className="title">Bank of Reacts</h1>
       <div className="cont">
         
-      <div className="left">
+        <div className="left">
+          
       <Sliders
         homeValue={homeValue}
         setHomeValue={setHomeValue}
@@ -57,7 +58,8 @@ function App() {
         setInterestRate={setInterestRate}
         loanTerm={loanTerm}
         setLoanTerm={setLoanTerm}
-        />
+          />
+          
         </div>
 
         <div className="right">
