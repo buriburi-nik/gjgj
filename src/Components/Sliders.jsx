@@ -88,17 +88,18 @@ return (
                 onChange={handleInterestRateChange}
             />
         </div>
-        <div className="slider">
-            <label>Loan Term: {loanTerm} years</label>
-            <input
-                type="range"
-                min="1"
-                max="30"
-                value={loanTerm}
-                step="1"
-                onChange={handleLoanTermChange}
-            />
-        </div>
+              <div className="slider">
+        <label>Tenure (Years): {loanTerm}</label>
+        <select value={loanTerm} onChange={handleLoanTermChange}>
+          <option value={5}>5 years</option>
+          <option value={10}>10 years</option>
+          <option value={15}>15 years</option>
+          <option value={20}>20 years</option>
+          <option value={25}>25 years</option>
+          <option value={30}>30 years</option>
+        </select>
+      </div>
+
     </div>
     
 );
