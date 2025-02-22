@@ -27,30 +27,16 @@ function App() {
   }
 
   
-  // const chartData = {
-  //   label: ["Principal", "Interest"],
-  //   datasets: [
-  //     {
-  //       label: "Loan Breakdown",
-  //       data: [loanAmount, totalInterestGenerated],
-  //       backgroundColor: ['rgba(100, 192, 75, 0.2)', 'rgba(138, 99, 255, 0.2)'],
-  //       borderColor: ['rgb(125, 138, 4)', 'rgba(255, 99, 132, 1)'],
-  //       borderWidth: 1,
-  //     }]
-  // }
   const chartData = {
     labels: ["Principal", "Interest"],
     datasets: [
       {
         label: "Loan Breakdown",
         data: [loanAmount, totalInterestGenerated],
-        backgroundColor: [
-          'rgba(255, 159, 64,0.3)',
-          'rgba(153, 102, 255,0.4)'
-        ],
+        backgroundColor: ['#BEEB45', '#353537'],
         borderColor: [
-          'rgb(75, 192, 192)',
-          'rgb(255, 86, 213)',
+          'rgb(217, 204, 229)',
+          'rgb(35, 82, 9)',
         ],
         borderWidth: 2,
       }

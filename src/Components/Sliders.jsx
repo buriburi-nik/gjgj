@@ -45,7 +45,8 @@ export default function Sliders({
     
 return (
     <div className="slider-cont">
-        <div className="slider">
+        <div className="slider"style={{ marginTop: 'none' }}
+>
             <label>Home Value: ${homeValue}</label>
             <input
                 type="range"
